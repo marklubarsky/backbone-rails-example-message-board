@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample</title>
+  <%= stylesheet_link_tag 'application.css' %>
+
+  <%= javascript_include_tag "jquery-1.7.1.min.js" %>
+	<%= javascript_include_tag "underscore.js" %>
+	<%= javascript_include_tag "backbone.js" %>
+	<%= javascript_include_tag "date.js" %>
+
+	<%= javascript_include_tag "setup.js" %>
+	<%= javascript_include_tag "models/message.js" %>
+	<%= javascript_include_tag "models/message_list.js" %>
+	<%= javascript_include_tag "views/message_list_view.js" %>
+	<%= javascript_include_tag "views/message_row_view.js" %>
+	<%= javascript_include_tag "views/base_create_edit_message_view.js" %>
+	<%= javascript_include_tag "views/create_message_view.js" %>
+	<%= javascript_include_tag "views/edit_message_view.js" %>
+	
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

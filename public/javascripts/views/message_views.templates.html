@@ -1,0 +1,53 @@
+<!-- Templates -->
+
+<script type="text/template" id="message_row_template">
+<ul><li class="edit"><button class="edit">Edit</button></li>
+<li class=description><ul><li class="line1"><%= body %></li>
+<li class="line2">Posted <%= (new Date(last_posted_at)).toString("MMMM d, yyyy @ h:mmtt") %> by <%= last_posted_by%></ul></li>
+<li class="remove"><button class="remove">Delete</button></li></ul>
+<div class="spacer"/>		
+</script>
+
+<script type="text/template" id="edit_message_template">
+<form method="post" action="#" id="editMessageForm" onsubmit="return false">
+<h1>Edit a Posting</h1>
+<fieldset class="left">
+<label>Title</label>
+<input name= 'title' type="text" value="<%=title%>"></input>
+<label>Name</label>
+<input name= 'name' type="text" value="<%=last_posted_by%>"></input>
+</fieldset>
+<fieldset class="right">
+<label>Message</label>
+<textarea name='body' cols="70" rows="5"><%=body%></textarea>
+</fieldset>
+
+<div class="spacer"></div>
+<div class="buttons">
+<button class="delete">Delete</button>
+<button type="submit">Submit</button>
+</buttons>
+</form>
+</script>
+
+<script type="text/template" id="new_message_template">
+<form method="post" action="#" id="newMessageForm" onsubmit="return false">
+<h1>Submit a Posting</h1>
+<fieldset class="left">
+<label>Title</label>
+<input name= 'title' type="text"></input>
+<label>Name</label>
+<input name= 'name' type="text"></input>
+</fieldset>
+<fieldset class="right">
+<label>Message</label>
+<textarea name='body' cols="70" rows="5"></textarea>
+</fieldset>
+
+<div class="spacer"></div>
+<div class="buttons">
+	<button class="delete">Delete</button>
+<button type="submit">Submit</button>
+</div>
+</form>
+</script>

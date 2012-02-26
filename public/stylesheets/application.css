@@ -1,0 +1,173 @@
+body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.spacer { clear:both; height:0;}
+.big-spacer { clear:both; height:1em;}
+
+p, h1, form, button{border:0; margin:0; padding:0;}
+
+h1 {
+	font-size: 1.3em;
+	margin: .2em .2em .2em .2em;
+}
+
+form {
+	margin:0 auto;
+	width:70%;
+	height:auto;
+	margin: 0;
+	padding: 0;	
+	border:1px solid #e5eff8;
+	color:#678197;
+	background:#f7fbff;
+}
+
+form button {
+	padding: 0 1em 0 1em;
+	margin: 0 1em 1em 0;
+	background-color: orange;
+	color:white;
+	border: 1px #666666 solid;
+	width: auto;
+	text-align: center;
+	font-weight: bold;	
+	height:2.5em;	
+}
+
+form .buttons {
+	margin: 0 0 0 0;
+	height:2.5em;
+}
+
+form button[type="submit"] {
+	float: right;
+	background-color: orange;
+}
+form button.delete {
+	float: right;
+	background-color: red;
+}	
+
+form fieldset {
+	border: none;
+	float:left;
+	height: auto;
+}
+form fieldset.left {
+	width: 30%;
+	float:left;
+}
+
+form fieldset.right {
+	width: 60%;
+	float:right;
+}
+
+form label{
+	display:block;
+	font-weight:bold;
+	text-align:left;
+	width:100%;
+}
+
+form input, form textarea {
+	display:block;
+	border:solid 1px #aacfe4;
+	width:100%;
+	margin:.2em 0 1.2em 0;
+	padding: 1px 0 1px 0;
+	font-size: 1.1em;
+	resize: none;
+}
+
+
+#message-list ul {
+	list-style-type: none;		
+	margin: 0;
+	padding: 0;	
+	border:2px solid #e5eff8;
+}
+
+#message-list ul li.header {
+	color:white;
+	background:gray;
+}
+
+#message-list ul li.message-row {
+	list-style-type: none;	
+	color:white;
+	background:#f7fbff;
+}
+
+#message-list {
+	width: 70%;	
+}
+
+
+#message-list li.message-row li {
+	float: left;	
+}
+
+#message-list li.message-row li.edit {
+	width: 10%;	
+}
+
+#message-list li.message-row li.remove {
+	width: 10%;	
+}
+
+#message-list li.message-row li.description {
+	width:80%;	
+}
+
+#message-list li.message-row li.description ul {
+	border:none;
+	padding: .6em 0 .6em 0;
+}
+
+
+#message-list li.message-row li.description li {	
+	display:block;
+	font-weight:bold;
+	float: none;	
+}
+
+
+#message-list li.message-row li.description li.line1 {	
+	color:#666666;
+	display:block;
+	word-wrap: break-word;
+}
+
+#message-list li.message-row li.description li.line2 {	
+	color:#666666;
+	display:block;
+	font-size:.8em;
+	font-weight:normal;	
+	float: none;	
+}
+
+#message-list button {
+	padding: .3em .6em .3em .6em;
+	margin: .6em 1em .6em 1em;
+	background-color: green;
+	color:white;
+	border: 1px #666666 solid;
+	width: auto;
+	text-align: center;
+	font-weight: bold;	
+	height:2.5em;
+}
+
+
+#message-list button.edit {
+	background-color: orange;
+}
+
+#message-list button.remove {
+	background-color: red;
+}
+
+

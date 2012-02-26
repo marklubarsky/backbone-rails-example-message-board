@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  title: Who knows backbone.js?
+  last_posted_by: Barack Obama
+  body: We are looking for experts in Backbone.js to fix our economy
+  last_posted_at: <%= Time.parse('2012-02-26 13:20:02 -0800') %>
+  
+two:
+  title: To Mr. President
+  last_posted_by: Undisclosed
+  body: Dear Mr. President, Backbone alone will not fix our economy. I suggest looking into in Ruby on Rails. 
+
+three:
+  title: Evil Doers
+  last_posted_by: George Bush 
+  body: |
+    These software engineers, whatever that means, are the cause of all our problems. 
+    We should immediately confiscate all their rubies and close all railroads 
+    so they cannot transport their backbones into our country.
+   

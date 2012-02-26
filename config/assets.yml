@@ -1,0 +1,22 @@
+embed_assets: off
+package_assets: always
+
+javascripts:
+  common:
+    - public/javascripts/jquery-1.7.1.min.js
+    - public/javascripts/underscore.js
+    - public/javascripts/backbone.js
+    - public/javascripts/date.js
+  app:
+    - public/javascripts/application.js
+    - public/javascripts/models/message.js
+  	- public/javascripts/models/message_list.js
+  	- public/javascripts/views/message_list_view.js 
+  	- public/javascripts/views/message_row_view.js
+  	- public/javascripts/views/base_create_edit_message_view.js
+  	- public/javascripts/views/create_message_view.js
+  	- public/javascripts/views/edit_message_view.js
+   
+stylesheets:
+  app:
+    - public/stylesheets/application.css

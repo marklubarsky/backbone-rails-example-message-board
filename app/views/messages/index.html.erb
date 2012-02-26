@@ -1,0 +1,12 @@
+<div id="messages_container"></div>
+
+<div id="create-edit-message"></div>
+<div class="big-spacer"></div>
+
+<div id="message-list"></div>	
+
+<script>
+	App.messageListView = new App.MessageListView({ collection: new App.MessageList() });
+</script>
+
+<%= render :partial => 'templates.js.html' %>

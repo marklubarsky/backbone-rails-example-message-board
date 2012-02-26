@@ -1,0 +1,42 @@
+This application is an example of how backbone.js can be used with Rails to create a simple message board.
+
+How to run this?
+	* start with a clean gemset
+	* bundle install
+	* rails s
+	* rake db:migrate (it's setup with sqlite)
+	* http://localhost:3000
+
+How to test?
+	* This code includes the following tests:
+		- rspec for model and controller
+		- capybara for requests/integration (NOTE: it's hooked up to run selenium with a real Firefox browser - be sure you have Firefox installed)
+		- TODO: jasmine specs. I originally test-drove with capybara, so I did not include jasmine.
+		- rake db:test:prepare
+		- rake spec
+	
+	NOTE: Could do more to cover edge-cases, e.g. offline use, concurrency etc. this is pretty simple for now.
+	
+What it contains:
+
+* Rails Message model
+* Rails controller that will respond to the initial HTML index page request and then ajax calls from the index page
+
+* Backbone setup:
+	- ensures authentication token is used
+	- changes the template syntax to use mustache.js-like brackets (so no conflicts with erb)	
+	
+* Backbone/underscore-ready templates
+	- templates.html.js
+	
+* Backbone Message and MessageList models
+* Backbone Views:
+	- MessageListView
+	- MessageRowView
+	- BaseCreateEditMessageView
+	- CreateMessageView
+	- Edit Message View
+	
+	NOTE: The intermediate view is missing from the original flow (the read-only view of the posting). It's functional without it as Edit view can serve the same purpose.
+	
+NOTE: Pardon my mediocre CSS styling. Did not invest much time there.
