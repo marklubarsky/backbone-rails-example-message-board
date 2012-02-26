@@ -137,7 +137,7 @@ describe MessagesController do
       end  
 
       it "should raise error without trying to destroy the message" do
-        @message.should_not_receive(:destroy)
+        Message.any_instance.should_not_receive(:destroy)
         lambda { delete :destroy, :id => @msg_id}.should raise_error('BOO!')
       end
     end
