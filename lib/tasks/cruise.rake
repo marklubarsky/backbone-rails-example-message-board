@@ -1,3 +1,6 @@
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
+
 desc "VH cruise tasks"
 task :cruise do
 	puts "Rake task for CI"
